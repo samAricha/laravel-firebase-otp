@@ -20,12 +20,14 @@ Route::get('/', function () {
     return view('otp');
 });
 
-Route::get('phone-auth', [PhoneAuthController::class, 'index']);
-
-Route::get('otp', [FirebaseController::class, 'otp'])->name('otp');
 
 Route::get('/home', function () {
     return view('home');
 });
+
+Route::get('phone-auth', [PhoneAuthController::class, 'index']);
+
+Route::get('otp', [FirebaseController::class, 'otp'])->name('otp');
+
 
 

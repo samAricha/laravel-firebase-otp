@@ -88,7 +88,7 @@
 
                 document.getElementById("sent-message").innerHTML = "You are succesfully logged in.";
                 document.getElementById("sent-message").classList.add("d-block");
-                window.location='https://cryptic-earth-93328.herokuapp.com/otp';
+                window.location='https://cryptic-earth-93328.herokuapp.com/home';
       
             }).catch(function (error) {
                 document.getElementById("error-message").innerHTML = error.message;
