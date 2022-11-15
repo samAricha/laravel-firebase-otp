@@ -17,11 +17,15 @@ use App\Http\Controllers\FirebaseController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('otp');
 });
 
 Route::get('phone-auth', [PhoneAuthController::class, 'index']);
 
 Route::get('otp', [FirebaseController::class, 'otp'])->name('otp');
+
+Route::get('/home', function () {
+    return view('home');
+});
 
 
