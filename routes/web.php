@@ -29,5 +29,9 @@ Route::get('phone-auth', [PhoneAuthController::class, 'index']);
 
 Route::get('otp', [FirebaseController::class, 'otp'])->name('otp');
 
+Route::get('/welcome', function() {
+    return view('custom');
+ });
+
 
 
