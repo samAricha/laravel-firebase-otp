@@ -69,8 +69,12 @@
                 
                     
                     <div class="column flex justify-center pt-8 sm:justify-start sm:pt-0">
-                        <img src="{{ asset('wc2022p1.png') }}" class="img-responsive center-block d-block mx-auto" alt="description of myimage">
-        
+                        <img src="{{ asset('wc2022p1.png') }}" 
+                        class="img-responsive center-block d-block mx-auto"
+                    
+                        height="500"
+                         alt="description of myimage">
+                        
                     </div>
                     
                 </div>
