@@ -65,8 +65,6 @@
 
         function otpSend() {
             var phoneNumber = document.getElementById('phone-number').value;
-            var cutNum = substr($phoneNumber, 1);
-            var validPhone = '+254'.$cutNum;
             const appVerifier = window.recaptchaVerifier;
             firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
                 .then((confirmationResult) => {
